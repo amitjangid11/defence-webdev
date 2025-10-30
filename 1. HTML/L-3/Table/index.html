@@ -1,0 +1,160 @@
+<!-- 
+  📘 NOTES (HTML Tables)
+
+  - <table> → Defines a table.
+  - <tr> (table row) → Defines each row.
+  - <th> (table header) → Bold header cell (by default, text is centered).
+  - <td> (table data) → Normal cell.
+
+  Attributes:
+  - border="1" → Adds border to table (not recommended in modern HTML, better use CSS).
+  - colspan="n" → Merges cells horizontally across 'n' columns.
+  - rowspan="n" → Merges cells vertically across 'n' rows.
+
+  Usage:
+  - Tables are best for structured data (not layout).
+  - Keep header rows (<th>) for accessibility.
+  - Use <caption> for table title if needed.
+-->
+
+<!-- Example 1: Simple Employee Table -->
+<table border="1">
+  <!-- Table Headings -->
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <!-- Table Rows -->
+  <tr>
+    <td>Rohit</td>
+    <td>Frontend Developer</td>
+  </tr>
+  <tr>
+    <td>Mohit</td>
+    <td>Backend Developer</td>
+  </tr>
+  <tr>
+    <td>Ayush</td>
+    <td>Full Stack Development</td>
+  </tr>
+</table>
+
+<hr /><hr />
+
+<!-- Example 2: Item/Price Table -->
+<table border="1">
+  <tr>
+    <th>Item</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Apple</td>
+    <td>10</td>
+    <td>$1.00</td>
+  </tr>
+  <tr>
+    <td>Orange</td>
+    <td>5</td>
+    <td>$1.50</td>
+  </tr>
+  <!-- Demonstration of totals -->
+  <tr>
+    <td>Total</td>
+    <td>15</td>
+    <td>$2.50</td>
+  </tr>
+</table>
+
+<hr /><hr />
+
+<!-- Example 3: Using colspan (Contact Info Table) -->
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <!-- "colspan=2" means this heading cell covers 2 columns -->
+    <th colspan="2">Contact Info</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>9918103210</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Cooper</td>
+    <td>9960124125</td>
+    <td>cooper@example.com</td>
+  </tr>
+  <tr>
+    <td>Eddy</td>
+    <td>8960124125</td>
+    <td>eddy@gmail.com</td>
+  </tr>
+</table>
+
+<hr /><hr />
+
+<!-- Example 4: Using rowspan and colspan -->
+<table border="1">
+  <tr>
+    <th>Column1</th>
+    <th>Column2</th>
+    <th>Column3</th>
+  </tr>
+  <tr>
+    <!-- "rowspan=2" → this cell takes up two rows -->
+    <td rowspan="2">Row1 Cell1</td>
+    <td>Row1 Cell2</td>
+    <td>Row1 Cell3</td>
+  </tr>
+  <tr>
+    <td>Row2 Cell2</td>
+    <td>Row2 Cell3</td>
+  </tr>
+  <!-- "colspan=3" → this cell stretches across all 3 columns -->
+  <tr>
+    <td colspan="3">Row 3 Cell 1</td>
+  </tr>
+</table>
+
+<hr /><hr />
+
+<!-- Example 5: Complex Table with rowspan + colspan -->
+<table border="1">
+  <tr>
+    <th>Level1</th>
+    <th>Level2</th>
+    <th>Level3</th>
+    <th>Level4</th>
+    <th>Level5</th>
+  </tr>
+  <tr>
+    <!-- rowspan="6" → System cell spans 6 rows -->
+    <td rowspan="6">System</td>
+    <td rowspan="4">System Apps</td>
+    <td rowspan="3">System Env</td>
+    <td>App Test</td>
+    <td rowspan="2">Foo</td>
+  </tr>
+  <tr>
+    <td>App Memory</td>
+  </tr>
+  <tr>
+    <td>App Test</td>
+    <td rowspan="2">Bar</td>
+  </tr>
+  <tr>
+    <td>System env 2</td>
+    <td>Memory</td>
+  </tr>
+  <tr>
+    <!-- "colspan=2 rowspan=2" means one cell spans across 2 cols and 2 rows -->
+    <td colspan="2" rowspan="2">System memory</td>
+    <td>Memory Func</td>
+    <td>Foo</td>
+  </tr>
+  <tr>
+    <td>Apes Test</td>
+    <td>bar</td>
+  </tr>
+</table>

@@ -1,0 +1,156 @@
+<!-- 
+1) Relative path :
+2) Absolute Path : 
+3) Why use boiler plate code
+4) UTF-8 :
+5) ASCII Value :
+6) Why use UTF-8 :
+7) div 
+8) class and id :
+8) Header,main and footer :
+-->
+<!-- 
+📘 NOTES: File Paths, Boilerplate, Encoding, and Semantic Elements
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Boilerplate code ensures browser understands structure of HTML -->
+  <meta charset="UTF-8"> <!-- UTF-8 is the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L-2 Topics</title>
+</head>
+<body>
+  
+  <!-- 1) Relative Path -->
+  <!-- 
+    - Refers to the location of a file relative to the current HTML file.
+    - Example: "images/pic.jpg" looks inside 'images' folder relative to current file.
+    - Useful when moving projects between systems.
+  -->
+  <h2>Relative Path Example</h2>
+  <img src="images/example.jpg" alt="Relative Path Example" width="150">
+  
+  <hr><hr>
+
+  <!-- 2) Absolute Path -->
+  <!-- 
+    - Full path from the root directory OR full URL.
+    - Example: "C:/Users/Amit/Desktop/pic.jpg" or "https://example.com/pic.jpg".
+    - Not portable between systems, but works for fixed locations.
+  -->
+  <h2>Absolute Path Example</h2>
+  <img src="https://via.placeholder.com/150" alt="Absolute Path Example">
+
+  <hr><hr>
+
+  <!-- 3) Why use Boilerplate Code -->
+  <!-- 
+    - Boilerplate = Standard starting structure for every HTML file.
+    - Includes: <!DOCTYPE>, <html>, <head>, <body>.
+    - Saves time, ensures cross-browser compatibility.
+  -->
+
+  <h2>Boilerplate Example</h2>
+  <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      Content here...
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre>
+
+  <hr><hr>
+
+  <!-- 4) UTF-8 -->
+  <!-- 
+    - UTF-8 = "Unicode Transformation Format – 8-bit".
+    - Can represent almost every character in every language (English, Hindi, Chinese, emoji, etc.).
+  -->
+
+  <h2>UTF-8 Example</h2>
+  <p>English: Hello</p>
+  <p>हिंदी: नमस्ते</p>
+  <p>Emoji: 😀</p>
+
+  <hr><hr>
+
+  <!-- 5) ASCII Value -->
+  <!-- 
+    - ASCII (American Standard Code for Information Interchange).
+    - Each English character maps to a number (A=65, a=97, etc.).
+    - Supports only 128 basic characters (English letters, digits, symbols).
+  -->
+
+  <h2>ASCII Example</h2>
+  <p>A = 65, B = 66, a = 97</p>
+
+  <hr><hr>
+
+  <!-- 6) Why use UTF-8 -->
+  <!-- 
+    - ASCII is limited to English (128 chars).
+    - UTF-8 supports all languages + symbols + emoji.
+    - Default and most recommended encoding for web.
+  -->
+
+  <h2>UTF-8 vs ASCII</h2>
+  <p>ASCII → Only English (A–Z, a–z, 0–9, symbols)</p>
+  <p>UTF-8 → All languages + Emoji 😍✔️</p>
+
+  <hr><hr>
+
+  <!-- 7) div -->
+  <!-- 
+    - <div> is a generic container (block-level).
+    - Used to group content for styling (with CSS) or scripting (JS).
+  -->
+
+  <h2>Div Example</h2>
+  <div style="border:1px solid black; padding:10px; margin:10px; background:lightyellow;">
+    This is a div container
+  </div>
+
+  <hr><hr>
+
+  <!-- 8) class and id -->
+  <!-- 
+    - class → Can be applied to multiple elements (used for group styling).
+    - id → Unique identifier for a single element (should not repeat).
+    - CSS: .className { ... }   #idName { ... }
+  -->
+
+  <h2>Class & ID Example</h2>
+  <div class="highlight">This uses a class</div>
+  <div id="unique">This uses an id</div>
+
+  <style>
+    .highlight { color: blue; font-weight: bold; }
+    #unique { color: red; background: #f0f0f0; }
+  </style>
+
+  <hr><hr>
+
+  <!-- 9) Header, Main, and Footer -->
+  <!-- 
+    - Semantic tags that describe structure of a webpage.
+    - <header> → Introductory content (logo, nav).
+    - <main> → Main page content (unique per page).
+    - <footer> → Bottom info (contact, copyright).
+    - Improves accessibility & SEO.
+  -->
+
+  <h2>Header, Main, Footer Example</h2>
+  <header style="background: lightblue; padding:10px;">This is the header</header>
+  <main style="background: lightgreen; padding:10px;">This is the main content</main>
+  <footer style="background: lightcoral; padding:10px;">This is the footer</footer>
+
+</body>
+</html>

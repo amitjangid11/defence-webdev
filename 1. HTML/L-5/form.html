@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 
+      📘 meta viewport: ensures the page scales correctly on mobile devices 
+      width=device-width → sets width to device screen width
+      initial-scale=1.0 → zoom level 100% initially
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Example</title>
+  </head>
+  <body>
+    
+    <!-- 
+      📘 <form> tag:
+      - Used to collect user input.
+      - "action" attribute defines where the form data is sent after submission.
+      - Inside a form, we use <input>, <select>, <textarea>, <button>, etc.
+    -->
+    <form action="">
+
+      <!-- 🧾 Text Input -->
+      <!-- type="text" → single-line text field -->
+      <label>Name </label>
+      <input type="text" name="userName" />
+      <br /><br />
+
+      <!-- 📞 Number Input -->
+      <!-- type="number" → accepts only numeric values -->
+      <label>Phone </label>
+      <input type="number" name="userPhone" />
+      <br /><br />
+
+      <!-- 🔐 Password Input -->
+      <!-- type="password" → hides characters entered -->
+      <label>Password </label>
+      <input type="password" name="userPassword" />
+      <br /><br />
+
+      <!-- 🚀 Submit Button -->
+      <!-- type="submit" → sends form data to the server (or URL in "action") -->
+      <input type="submit" />
+      <br /><br />
+
+      <!-- ⚧️ Radio Buttons -->
+      <!-- 
+        - type="radio" allows only one option from a group.
+        - All radio inputs must share the SAME "name" attribute to form a group.
+        - "value" is the data sent if that option is selected.
+        - "for" in label links it to input id (click label = select input).
+      -->
+      <h3>Gender</h3>
+      <input type="radio" name="gender" id="male" value="M" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="F" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <!-- ✅ Checkboxes -->
+      <!-- 
+        - type="checkbox" allows selecting multiple options.
+        - Each checkbox works independently.
+        - Use unique "id" values (don’t repeat!).
+      -->
+      <h3>Skills</h3>
+      <input type="checkbox" name="skill_c" id="c" value="C" />
+      <label for="c">C</label>
+      <br /><br />
+
+      <input type="checkbox" name="skill_cpp" id="cpp" value="C++" />
+      <label for="cpp">C++</label>
+      <br /><br />
+
+      <input type="checkbox" name="skill_java" id="java" value="Java" />
+      <label for="java">Java</label>
+      <br /><br />
+
+      <input type="checkbox" name="skill_python" id="python" value="Python" />
+      <label for="python">Python</label>
+      <br /><br />
+
+    </form>
+  </body>
+</html>

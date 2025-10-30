@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Lecture 2 - Nested Lists</title>
+</head>
+<body>
+
+  <!-- 
+    📘 NOTES (Lecture 2 - Nested Lists)
+
+    - Nested List: a list inside another list.
+    - <ul> → Unordered list (bullets).
+    - <ol> → Ordered list (numbers/letters).
+    - <li> → List item, can contain text, lists, or even headings.
+    - Mixing <ul> and <ol> is possible (example: Country → State → City).
+    - Headings (<h2>, <h3>, etc.) can be placed inside <li> for clarity.
+    - Good for hierarchical data (e.g., meal plans, course structures).
+  -->
+
+  <!-- Example 1: Country List -->
+  <h1>Country List</h1>
+  <ul>
+    <li>
+      India
+      <ul>
+        <li>
+          Delhi
+          <ol>
+            <li>Dwarka</li>
+            <li>Vikaspuri</li>
+          </ol>
+        </li>
+        <li>Maharashtra</li>
+        <li>Goa</li>
+      </ul>
+    </li>
+    <li>
+      USA
+      <ul>
+        <li>California</li>
+        <li>
+          Texas
+          <ol>
+            <li>Houston</li>
+            <li>Austin</li>
+            <li>Dallas</li>
+          </ol>
+        </li>
+        <li>New Jersey</li>
+      </ul>
+    </li>
+    <li>
+      England
+      <ul>
+        <li>Oval</li>
+        <li>London</li>
+        <li>Yorkshire</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr><hr>
+
+  <!-- Example 2: Nested Unordered List -->
+  <h2>Nested Unordered List</h2>
+  <p>GeeksforGeeks course list:</p>
+  <ul>
+    <li>
+      DSA
+      <ul>
+        <li>Array</li>
+        <li>Linked List</li>
+        <li>Stack</li>
+        <li>Queue</li>
+      </ul>
+    </li>
+    <li>
+      Web Technologies
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </li>
+    <li>Aptitude</li>
+    <li>Gate</li>
+    <li>Placement</li>
+  </ul>
+
+  <hr><hr>
+
+  <!-- Example 3: Daily Meal Plan -->
+  <h1>Daily Meal Plan</h1>
+  <ol>
+    <li>
+      <h2>Breakfast</h2>
+      <ul>
+        <li>
+          Main Dish: Pancakes
+          <ul>
+            <li>Maple Syrup</li>
+            <li>Fresh Berries</li>
+            <li>Whipped Cream</li>
+          </ul>
+        </li>
+        <li>Side: Fruit Salad</li>
+        <li>Drink: Orange Juice</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Lunch</h2>
+      <ul>
+        <li>
+          Main Course: Build-Your-Own Sandwich
+          <ol>
+            <li>Start with two slices of Sourdough Bread.</li>
+            <li>Add a layer of Turkey slices.</li>
+            <li>Place Swiss Cheese on top.</li>
+            <li>Finish with Lettuce and Tomato.</li>
+          </ol>
+        </li>
+        <li>Side: Potato</li>
+        <li>Beverage: Iced Tea</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Dinner</h2>
+      <ul>
+        <li>Appetizer: Garlic Bread</li>
+        <li>
+          Main Course: Spaghetti Bolognese
+          <ol>
+            <li>First, plate the cooked spaghetti.</li>
+            <li>Next, ladle the bolognese sauce over the pasta.</li>
+            <li>Finally, sprinkle with grated Parmesan cheese.</li>
+          </ol>
+        </li>
+        <li>Dessert: Tiramisu</li>
+      </ul>
+    </li>
+  </ol>
+
+  <hr><hr>
+
+  <!-- Example 4: Nested Tech List -->
+  <ul>
+    <li>
+      <h2>Frontend</h2>
+      <ul>
+        <li>HTML</li>
+        <li>
+          CSS
+          <ul>
+            <li>onsubmit Attribute</li>
+            <li>onclick Attribute</li>
+          </ul>
+        </li>
+        <li>JavaScript</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Library/Framework</h2>
+      <ul>
+        <li>
+          ReactJS
+          <ul>
+            <li>Hoisting</li>
+            <li>Props</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr><hr>
+
+  <!-- Example 5: Computer Science Path -->
+  <h1>Computer Science Learning Path</h1>
+  <ol>
+    <li><h2>Foundational Concepts</h2></li>
+    <p>Start with the absolute basics that underpin everything else.</p>
+    <li>
+      <h2>Core Computer Science</h2>
+      <ul>
+        <li>Algorithms and Data Structures</li>
+        <li>Database Systems</li>
+        <li>
+          <h3>Web Development</h3>
+          <ol>
+            <li>HTML Fundamentals</li>
+            <li>CSS Styling</li>
+            <li>
+              <h4>JavaScript Fundamentals</h4>
+              <ul>
+                <li>Variables and Data Types</li>
+                <li>Functions</li>
+                <li>Conditional Logic (if/else)</li>
+                <li>Loops (for, while)</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>Operating Systems</li>
+      </ul>
+    </li>
+    <li><h2>Specialization</h2></li>
+    <p>Choose an advanced field to focus on after mastering the core concepts.</p>
+  </ol>
+
+</body>
+</html>

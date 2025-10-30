@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Website</title>
+    
+    <!-- ===== Optional: Some basic styling for better layout ===== -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      audio, video, iframe {
+        display: block;
+        margin: 20px 0;
+      }
+
+      iframe {
+        width: 560px;
+        height: 315px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== Main Heading ===== -->
+    <h1>This is our Media Website</h1>
+
+    <!-- ===== Audio Section ===== -->
+    <!-- Using multiple sources for browser compatibility -->
+    <audio controls>
+      <source src="audio.ogg" type="audio/ogg" />
+      <source src="audio.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- ===== Video Section ===== -->
+    <!-- Multiple formats can be added like mp4, webm, ogv -->
+    <video controls height="300" autoplay muted loop >
+      <source src="./video.mp4" type="video/mp4"/>
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- ===== YouTube Embeds ===== -->
+    <!-- Embedded YouTube video 1 -->
+    <iframe src="https://youtube.com/embed/NGYp1zCBthk?si=d0vSYUvYSFAKXTuV" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Embedded YouTube video 2 -->
+    <iframe src="https://www.youtube.com/embed/rfObCuGLSek" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>
+
+<!-- ===== Revision Notes =====
+1. <audio> tag:
+   - 'controls' attribute adds play, pause, volume UI
+   - Use multiple <source> for compatibility (ogg, mp3)
+   - Always add fallback text for unsupported browsers
+
+2. <video> tag:
+   - 'controls', 'autoplay', 'loop', 'muted' are useful attributes
+   - Multiple <source> elements for different video formats
+   - Fallback text ensures accessibility
+
+3. <iframe> for embedding:
+   - Commonly used for YouTube/Vimeo videos
+   - 'allowfullscreen' allows fullscreen mode
+   - 'width' & 'height' can be adjusted in style or attributes
+
+4. Best Practices:
+   - Keep a consistent indentation for readability
+   - Use comments to mark sections (<audio>, <video>, <iframe>)
+   - Use relative paths (./video.mp4) or absolute URLs
+   - Include fallback content for unsupported browsers
+   - Styling inside <style> or separate CSS file for maintainability
+===== End of Notes ===== -->
