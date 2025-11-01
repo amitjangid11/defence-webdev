@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Priority Demo</title>
+
+  <!-- Internal CSS -->
+  <style>
+    h1 {
+      color: blue; /* lowest priority among below types */
+    }
+
+    .highlight {
+      color: green; /* class is stronger than element selector */
+    }
+
+    #unique {
+      color: red; /* id is stronger than class */
+    }
+  </style>
+
+  <!-- External CSS (simulate as if it was linked below internal)
+  <link rel="stylesheet" href="style.css" />
+  -->
+</head>
+
+<body>
+  <h1 id="unique" class="highlight" style="color: purple; background-color: blanchedalmond;">
+    Hello Coder Army.
+  </h1>
+
+  <h2>
+    Strike is Coming Soon.
+  </h2>
+</body>
+</html>
+
+<!-- 
+# What you’ll observe:
+1️⃣ Element selector (h1 { color: blue }) — lowest power.
+2️⃣ Class (.highlight { color: green }) — overrides element.
+3️⃣ ID (#unique { color: red }) — overrides class.
+4️⃣ Inline style (style="color: purple") — overrides all of them.
+
+💡 So, final visible color will be PURPLE because inline CSS wins.
+-->
